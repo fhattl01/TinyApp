@@ -16,7 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PictureViewer"></activity>
+        <activity
+            android:name="com.comp150.frank.tinyapp.PictureViewer"
+            android:parentActivityName="com.comp150.frank.tinyapp.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.comp150.frank.tinyapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
