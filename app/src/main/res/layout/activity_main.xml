@@ -9,9 +9,7 @@
     <LinearLayout
         android:layout_width="368dp"
         android:layout_height="495dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
@@ -25,37 +23,42 @@
             android:id="@+id/halligan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Halligan"
-            android:onClick="setHalligan"/>
+            android:onClick="setHalligan"
+            android:text="Halligan" />
 
         <Button
             android:id="@+id/library"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="setLibrary"
             android:text="Tisch Library" />
 
         <Button
             android:id="@+id/gym"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="setGym"
             android:text="Tisch Athletic Facility" />
 
         <Button
             android:id="@+id/dewick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="setDewick"
             android:text="Dewick Dining Hall" />
 
         <Button
             android:id="@+id/carmichael"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="setCarmichael"
             android:text="Carmichael Dining Hall" />
 
         <Button
             android:id="@+id/hodgdon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="setHodgdon"
             android:text="Hodgdon Grab and Go" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
