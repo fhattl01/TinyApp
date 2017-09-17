@@ -25,6 +25,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:contentDescription="Tufts Building"
             android:src="@drawable/halligan" />
+
+        <CheckBox
+            android:id="@+id/setBlackAndWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:text="Make Black and White"
+            android:textAlignment="center"
+            android:onClick="toggleBlackAndWhite"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

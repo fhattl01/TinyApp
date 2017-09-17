@@ -2,9 +2,13 @@ package com.comp150.frank.tinyapp;
 
 
 import android.content.Intent;
+import android.graphics.ColorMatrix;
+import android.graphics.ColorMatrixColorFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 
 public class PictureViewer extends AppCompatActivity {
@@ -34,6 +38,21 @@ public class PictureViewer extends AppCompatActivity {
                 break;
             case 6: building.setImageResource(R.drawable.hodgdon);
                 break;
+        }
+    }
+
+    public void toggleBlackAndWhite(View v) {
+        boolean checked = ((CheckBox) v).isChecked();
+        ImageView building = (ImageView)findViewById(R.id.buildingViewer);
+
+        if (checked) {
+            ColorMatrix matrix = new ColorMatrix();
+            matrix.setSaturation(0);
+
+            ColorMatrixColorFilter filter = new ColorMatrixColorFilter(matrix);
+            building.setColorFilter(filter);
+        } else {
+            building.clearColorFilter();
         }
     }
 
